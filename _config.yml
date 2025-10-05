@@ -3,3 +3,4 @@ description: Welcome to my GitHub Pages site where I share my learning journey, 
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
+favicon: /my-icon.jpg
