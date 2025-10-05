@@ -1,4 +1,3 @@
-<link rel="icon" href="my-icon.png" type="image/png">
 
 ---
 layout: default
