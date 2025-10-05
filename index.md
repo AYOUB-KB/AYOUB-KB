@@ -1,12 +1,12 @@
 ---
-title: "RazviOverflow"
+title: "AYOUB-KB"
 mainPage: "true"
 categories: [hacking, learn]
 tags: [hacking, learn, practice, exploit]
 description: Hacking explained so we can all understand the underlying concepts. In this site you'll find different tutorials and CTF's write-ups explained in gory detail (most of the time) so together we can understand and practice every aspect of the secure (or rather insecure) side of the (our) binary world.
 ---
 
-I'm Razvi. You can find me on twitter [@Razvieu](https://twitter.com/razvieu?lang=en)
+I'm Ayoub. You can find me on Linkdin [@ayoub bailiz](https://www.linkedin.com/in/ayoub-kb/)
 
 # List of best hacking sites
 Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills. 
