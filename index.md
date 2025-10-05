@@ -1,124 +1,31 @@
-
 ---
-layout: default
+title: "RazviOverflow"
+mainPage: "true"
+categories: [hacking, learn]
+tags: [hacking, learn, practice, exploit]
+description: Hacking explained so we can all understand the underlying concepts. In this site you'll find different tutorials and CTF's write-ups explained in gory detail (most of the time) so together we can understand and practice every aspect of the secure (or rather insecure) side of the (our) binary world.
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+I'm Razvi. You can find me on twitter [@Razvieu](https://twitter.com/razvieu?lang=en)
 
-[Link to another page](./another-page.html).
+# List of best hacking sites
+Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills. 
 
-There should be whitespace between paragraphs.
+- [Best hacking sites](/starthacking)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# How2stack
+Learn binary exploitation (pwn) through videos that'll help you understand the foundations of stack-based techniques. 
 
-# Header 1
+- [How2stack](/how2stack)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+# CTF Writeups
+I will post in this sections all the writeups I write along the way while participating in live CTF. I think sharing this knowledge is always positive since actual competition is a source of knowledge and self-improve. Sharing this knowledge helps not only me but the whole community.  
 
-## Header 2
+ - [CTF Writeups](/ctfwriteups)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+# Tutorials && Writeups
+Knowledge that I consider is worth sharing. Tutorials,  walkthroughs, challenges, writeups, papers, articles... thoroughly detailed. The purpose is to understand the underlying idea and the inner workings of it. Unlike the previous section, these writeups deal with challenges that are always available, not in a given time lapse. 
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+- [TryHackMe](/tryhackme)
+- [Microcorruption](/microcorruption)
+- [247CTF](/247ctf)
