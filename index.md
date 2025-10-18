@@ -12,16 +12,16 @@ I'm Ayoub. You can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/
 # Projetcs 
 A collection of my personal cybersecurity projects, experiments. This section includes my own work as well as interesting resources and analyses I've found worth sharing. The goal is to document, learn, and exchange knowledge in a practical and insightful way.
 
-- [Interesting Writeups](/writeups)
+- [My Projects](/writeups)
 
 
 # Writeups
 writeups and analyses from the community that I found valuable. Each entry links back to the original author and includes a short note on why it's worth reading.
 
-- [Interesting Writeups](/writeups)
+- [Interesting Writeups](/writeupslist)
   
 
 # CTF Writeups
 Here I share my journey and experiences while learning through Capture The Flag challenges. These writeups document how I approach problems, what I learn along the way, and resources that help me improve step by step.
 
-- [CTF Writeups]({{ '/ctf.html' | relative_url }})
+- [CTF Writeups](/ctf)
