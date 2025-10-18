@@ -12,7 +12,7 @@ I'm Ayoub. You can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/
 # List of best hacking sites
 Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills. 
 
-- [Best hacking sites](/starthacking)
+- [Best hacking sites](/starthacking/)
 
 # How2stack
 Learn binary exploitation (pwn) through videos that'll help you understand the foundations of stack-based techniques. 
