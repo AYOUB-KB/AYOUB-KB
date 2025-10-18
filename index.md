@@ -18,7 +18,7 @@ A collection of my personal cybersecurity projects, experiments. This section in
 # Writeups
 writeups and analyses from the community that I found valuable. Each entry links back to the original author and includes a short note on why it's worth reading.
 
-* [Interesting Writeups](/writeupslist/writeups)
+- [Interesting Writeups](/writeupslist/writeups)
   
 
 # CTF Writeups
