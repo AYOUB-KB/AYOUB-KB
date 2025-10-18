@@ -11,7 +11,7 @@ I'm Ayoub. You can find me on Linkdin [@ayoub bailiz](https://www.linkedin.com/i
 # List of best hacking sites
 Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills. 
 
-- [Best hacking sites](/_hackingwebsitelist)
+- [Best hacking sites](/hackingwebsitelist)
 
 # How2stack
 Learn binary exploitation (pwn) through videos that'll help you understand the foundations of stack-based techniques. 
