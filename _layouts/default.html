@@ -31,7 +31,7 @@
 
     <header style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px;">
       <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h1>{{ site.title | default: site.github.AYOUB-KB }}</h1>
         <h2 style="color: #666;">{{ site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
@@ -75,7 +75,7 @@
           <span>
                 {% for tag in page.tags %}
                   {% capture tag_name %}{{ tag }}{% endcapture %}
-                  <a href="/tags/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>
+                  <a href="{{ '/tags/' | append: tag_name | append: '.html' | relative_url }}"><nobr>{{ tag_name }}</nobr></a>
                 {% endfor %}
           </span>
       </section>
