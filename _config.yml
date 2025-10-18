@@ -1,6 +1,32 @@
-title: Ayoub's Projects
-description: Welcome to my GitHub Pages site where I share my learning journey, experiments, and projects in cybersecurity.
-show_downloads: true
-google_analytics:
+# _config.yml
+title: "AYOUB-KB"
+description: "Liste & writeups - hacking"
 theme: jekyll-theme-hacker
-favicon: /my-icon.jpg
+author: "Ayoub"
+baseurl: "/AYOUB-KB" # <- si site de projet; sinon mettre "" (vide)
+url: "https://ayoub-kb.github.io/AYOUB-KB/" # remplace USERNAME par ton user GitHub
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  microcorruption:
+    output: true
+  247ctf:
+    output: true
+  hackingwebsitelist:
+    output: true
+  ctfwriteups:
+    output: true
+  tryhackme:
+    output: true
+  how2stack:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
