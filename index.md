@@ -24,4 +24,4 @@ writeups and analyses from the community that I found valuable. Each entry links
 # CTF Writeups
 Here I share my journey and experiences while learning through Capture The Flag challenges. These writeups document how I approach problems, what I learn along the way, and resources that help me improve step by step.
 
-- [CTF Writeups]('/ctf.html/')
+- [CTF Writeups]('_ctfwriteups/ctf.html/')
