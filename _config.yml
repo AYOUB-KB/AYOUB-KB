@@ -3,6 +3,7 @@ title: "AYOUB-KB"
 description: "Liste & writeups - hacking"
 theme: jekyll-theme-hacker
 author: "Ayoub"
+baseurl: "/AYOUB-KB"
 url: "https://ayoub-kb.github.io/AYOUB-KB/"
 
 plugins:
