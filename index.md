@@ -18,10 +18,10 @@ A collection of my personal cybersecurity projects, experiments. This section in
 # Writeups
 writeups and analyses from the community that I found valuable. Each entry links back to the original author and includes a short note on why it's worth reading.
 
-- [Interesting Writeups](/writeups/)
+- [Interesting Writeups](/writeups)
   
 
 # CTF Writeups
 Here I share my journey and experiences while learning through Capture The Flag challenges. These writeups document how I approach problems, what I learn along the way, and resources that help me improve step by step.
 
- - [CTF Writeups](/ctf/)
+ - [CTF Writeups](/ctf)
