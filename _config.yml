@@ -3,7 +3,6 @@ title: "AYOUB-KB"
 description: "Liste & writeups - hacking"
 theme: jekyll-theme-hacker
 author: "Ayoub"
-baseurl: "/AYOUB-KB" # <- si site de projet; sinon mettre "" (vide)
 url: "https://ayoub-kb.github.io/AYOUB-KB/" # remplace USERNAME par ton user GitHub
 
 plugins:
