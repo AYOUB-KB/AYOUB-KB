@@ -3,18 +3,19 @@ title: "AYOUB-KB"
 mainPage: "true"
 categories: [hacking, learn]
 tags: [hacking, learn, practice, exploit]
-description: Hacking explained so we can all understand...
+description: "Hacking explained so we can all understand the underlying concepts."
+layout: default
 ---
 
-I'm Ayoub. You can find me on Linkdin [@ayoub bailiz](https://www.linkedin.com/in/ayoub-kb/)
+I'm Ayoub. You can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/in/ayoub-kb/)
 
 # List of best hacking sites
-Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills. 
+Here you can find a list, compilation, directory... of the best hacking sites. You can start from scratch, learn, improve, test your skills.
 
 - [Best hacking sites]({{ site.baseurl }}/hackingwebsitelist/)
 
 # How2stack
-Learn binary exploitation (pwn) through videos that'll help you understand the foundations of stack-based techniques. 
+Learn binary exploitation (pwn) through videos that'll help you understand the foundations of stack-based techniques.
 
 - [How2stack]({{ site.baseurl }}/how2stack/)
 
