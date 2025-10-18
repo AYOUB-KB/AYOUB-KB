@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125438475-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125438475-1');
+    </script>
+
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    {% if page.image %}
+      <meta property="og:image:secure_url" content="{{site.url}}{{page.image}}" />
+    {% endif %}
+
+{% seo %}
+
+  </head>
+
+  <body>
+
+    <header style="padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px;">
+      <div class="container">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 style="color: #666;">{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <section id="downloads">
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+          {% endif %}
+          <a href="/" class="btn btn-root-page"><span class="icon"></span>Root page</a>
+          <a href="https://www.youtube.com/@RazviOverflow" class="btn btn-youtube"><span class="icon"></span>YouTube</a>
+          <a href="https://twitter.com/razvieu?lang=en" class="btn btn-twitter"><span class="icon"></span>Twitter</a>
+          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+
+      {% comment %}
+        Basically what I'm doing here is rendering the title as h1 font-size:30 retrieving it from 
+        each individual page properties. I do it that way so I can easily paste tags underneath it.
+        If the page is the main one, tags are not requiered. Checking page.mainPage against "true"
+        is equals to checking it's value and it's existence. If it is equal to blank, it does not exist. 
+        If it does not exist, it means we are not in main page. If we are not in main page, we want tags.
+      {% endcomment %}
+
+      <section id="title" style="margin-bottom: 0px;">
+        <h1 style="font-size: 30px; margin-bottom: 0px;">{{ page.title }}</h1>
+        {% if page.date %}
+          <date style="font-size: 13px; color: #666;">Posted on {{page.date | date_to_string}}. 
+              <!-- {% assign creationDate = page.date | date_to_string %}
+              {% assign updateDate = page.last_modified_at | date: '%d %b %Y' %}
+              {% if creationDate != updateDate %}
+                Last modified on {{ updateDate }}.
+              {% endif %} -->
+          </date>
+        {% endif %}
+      </section>
+
+      {% if page.mainPage != "true" %}
+      <section id="tags">
+          <span>
+                {% for tag in page.tags %}
+                  {% capture tag_name %}{{ tag }}{% endcapture %}
+                  <a href="/tags/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>
+                {% endfor %}
+          </span>
+      </section>
+      {% endif %}
+      <section align="justify" id="main_content">
+        {{ content }}
+
+        {% if page.hasComments %}
+          {% include disqus.html %}
+        {% endif %}
+      </section>
+    </div>
+  </body>
+</html>
