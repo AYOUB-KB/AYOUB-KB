@@ -1,7 +1,6 @@
 ---
 title: "Writeups List"
 layout: default
-permalink: /writeupslist/writeups/
 categories: [hacking, learn]
 date: 2025-18-10
 tags: [hacking, learn, practice, exploit]
