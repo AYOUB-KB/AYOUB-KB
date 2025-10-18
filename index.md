@@ -22,6 +22,6 @@ writeups and analyses from the community that I found valuable. Each entry links
   
 
 # CTF Writeups
-I will post in this sections all the writeups I write along the way while participating in live CTF. I think sharing this knowledge is always positive since actual competition is a source of knowledge and self-improve. Sharing this knowledge helps not only me but the whole community.  
+Here I share my journey and experiences while learning through Capture The Flag challenges. These writeups document how I approach problems, what I learn along the way, and resources that help me improve step by step.
 
  - [CTF Writeups](/ctf)
