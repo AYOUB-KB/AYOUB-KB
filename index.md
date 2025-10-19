@@ -12,7 +12,7 @@ I'm Ayoub. You can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/
 # Projetcs 
 A collection of my personal cybersecurity projects, experiments. This section includes my own work as well as interesting resources and analyses I've found worth sharing. The goal is to document, learn, and exchange knowledge in a practical and insightful way.
 
-- [My Projects](/Projects/)
+- [My Projects](/AYOUB-KB/projects/)
 
 
 # Writeups
