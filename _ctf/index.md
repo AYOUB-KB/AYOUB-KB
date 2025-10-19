@@ -1,10 +1,10 @@
 ---
 title: "CTF Writeups"
+layout: default
 categories: [ctf]
-image: /images/icon.png
 tags: [ctf, writeup, capture the flag]
 permalink: /ctf/
-description: CTF (Capture The Flag) solutions and writeups explaining how the flag was actually capturesd. Self-improving and learning through live competition.
+description: "CTF (Capture The Flag) writeups and solutions documenting my learning process through different challenges and competitions."
 ---
 <img src="/images/CTF/icon.png" width="200" height="200"/>
 
