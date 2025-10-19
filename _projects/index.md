@@ -3,7 +3,7 @@ title: "MY PROJECTS"
 layout: default
 categories: [Projects]
 tags: [writeup, Practice]
-permalink: /Projects/
+permalink: /projects/
 description: "CTF (Capture The Flag) writeups and solutions documenting my learning process through different challenges and competitions."
 ---
 
