@@ -14,7 +14,7 @@ plugins:
 collections:
   writeupslist:
     output: true
-  ctfwriteups:
+  ctf:
     output: true
   microcorruption:
     output: true
