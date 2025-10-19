@@ -14,15 +14,11 @@ plugins:
 collections:
   microcorruption:
     output: true
-  247ctf:
-    output: true
   writeupslist:
     output: true
   ctfwriteups:
     output: true
-  tryhackme:
-    output: true
-  how2stack:
+  ctf:
     output: true
 
 defaults:
