@@ -1,9 +1,9 @@
 ---
 title: "Writeups List"
 layout: default
-categories: [hacking, learn]
-date: 2025-18-10
-tags: [hacking, learn, practice, exploit]
+permalink: /writeupslist/
+date: 2025-10-18
+tags: [hacking]
 description: "A collection of insightful writeups and articles about cybersecurity, AI, and related topics that I found online. I share them here to keep valuable knowledge in one place and help others discover great learning resources."
 ---
 
