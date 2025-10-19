@@ -16,7 +16,7 @@ collections:
     output: true
   ctf:
     output: true
-  microcorruption:
+  Projects:
     output: true
   247ctf:
     output: true
