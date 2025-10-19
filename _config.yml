@@ -1,24 +1,28 @@
-# _config.yml
 title: "AYOUB-KB"
 description: "Liste & writeups - hacking"
 theme: jekyll-theme-hacker
 author: "Ayoub"
-url: "https://ayoub-kb.github.io"
-baseurl: "/AYOUB-KB"
 
+# SITE URL / BASEURL: url = your GitHub user site (no repo name)
+url: "https://ayoub-kb.github.io"
+baseurl: "/AYOUB-KB"   # leave this if your site is https://ayoub-kb.github.io/AYOUB-KB
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
 collections:
-  microcorruption:
-    output: true
   writeupslist:
     output: true
   ctfwriteups:
     output: true
-  ctf:
+  microcorruption:
+    output: true
+  247ctf:
+    output: true
+  tryhackme:
+    output: true
+  how2stack:
     output: true
 
 defaults:
@@ -26,4 +30,3 @@ defaults:
       path: ""
     values:
       layout: default
-
