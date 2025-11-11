@@ -9,7 +9,7 @@ description: "test."
 
  
 
-* [Attackin LSASS](/projects/Attacking LSASS/index.md)
+* [Attackin LSASS](/projects/Attacking LSASS/)
 * [P1](/ctfwriteups/test)
 * [P1](/ctfwriteups/test)
 * [P1](/ctfwriteups/test)
