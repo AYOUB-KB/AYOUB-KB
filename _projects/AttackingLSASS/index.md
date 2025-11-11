@@ -1,6 +1,6 @@
 ---
 title: "Attacking LSASS"
-categories: [projects]
+categories: [Projects]
 tags: [passwords, writeup, hacking, security]
 hasComments: true
 date: 2025-11-11
