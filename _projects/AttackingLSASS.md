@@ -4,7 +4,6 @@ categories: [Projects]
 tags: [passwords, writeup, hacking, security]
 hasComments: true
 date: 2025-11-11
-permalink: /projects/AttackingLSASS/
 ---
 
 # Goal
