@@ -10,10 +10,9 @@ description: "CTF (Capture The Flag) writeups and solutions documenting my learn
 
 CTF (Capture The Flag) solutions and writeups explaining how the flag was actually captured. Self-improving and learning through live competition. 
 
-* [ctf1](/ctfwriteups/NAHAMCONCTF2020)
-* [ctf1](/ctfwriteups/TJCTF2020)
-* [ctf1](/ctfwriteups/AUCTF2020)
-* [ctf1](/ctfwriteups/RIFTCTF2020)
-* [ctf1](/ctfwriteups/UTCTF2020)
-* [ctf1](/ctfwriteups/NeverLAN CTF 2020)
-* [ctf1](/ctfwriteups/Hackplayers H-c0n Qualifiers 2020)
+- [Kerberoasting MSSQl](/ctf/KerberoastingMSSQl/) 
+* [ctf1](/ctfwriteups/)
+* [ctf1](/ctfwriteups/)
+* [ctf1](/ctfwriteups/)
+* [ctf1](/ctfwriteups/)
+
