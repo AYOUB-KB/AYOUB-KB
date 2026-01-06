@@ -1,6 +1,6 @@
 ---
 title: "Kerberoasting"
-categories: [Projects]
+categories: [ctf]
 tags: [passwords, writeup, hacking, security]
 hasComments: true
 date: 2026-01-04
