@@ -7,7 +7,7 @@ description: "Hacking explained so we can all understand the underlying concepts
 layout: default
 ---
 
-I'm Ayoub. You can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/in/ayoub-kb/)
+Hey! you can find me on LinkedIn [@ayoub bailiz](https://www.linkedin.com/in/ayoub-kb/) ;)
 
 # Projetcs 
 A collection of my personal cybersecurity projects, experiments. This section includes my own work as well as interesting resources and analyses I've found worth sharing. The goal is to document, learn, and exchange knowledge in a practical and insightful way.
