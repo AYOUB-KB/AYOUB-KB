@@ -10,7 +10,7 @@ description: "CTF (Capture The Flag) writeups and solutions documenting my learn
 
 CTF (Capture The Flag) solutions and writeups explaining how the flag was actually captured. Self-improving and learning through live competition. 
 
-- [Kerberoasting MSSQl](/ctf/KerberoastingMSSQl/) 
+- [Kerberoasting MSSQl](/ctf/KerberoastingMSSQL/) 
 * [ctf1](/ctfwriteups/)
 * [ctf1](/ctfwriteups/)
 * [ctf1](/ctfwriteups/)
