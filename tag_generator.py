@@ -1,18 +1,5 @@
 #!/usr/bin/env python
 
-'''
-REQUIRES PYTHON 3.5+
-Razvi on September 2018
-Contact: Twitter @Razvieu
-
-This script creates tags for your Jekyll blog hosted by Github page.
-No plugins required. If you want to use it, make sure you edit post_dirs
-to fit your needs.
-
-Modified on 20th January 2020. Now the script recursively traverses all
-the directories and subdirectories starting from "./" and checks every ".md"
-file looking for tags. It now requires Python 3.5+
-'''
 
 import glob
 import os
